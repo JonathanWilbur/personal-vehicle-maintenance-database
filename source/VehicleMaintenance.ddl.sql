@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS VehicleMaintenance (
     `description`					TEXT,
 
     -- Vehicle Information
-    `vehicleID`						BIGINT NOT NULL,
+    `vehicleID`						BIGINT UNSIGNED NOT NULL,
     `vehicleMileage`				INTEGER UNSIGNED,
     `date`							DATE,
 
