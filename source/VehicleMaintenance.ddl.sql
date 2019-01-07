@@ -9,12 +9,12 @@ CREATE TABLE IF NOT EXISTS VehicleMaintenance (
     `date`							DATE,
 
     -- Costs Information
-	`laborCosts`					FLOAT SIGNED COMMENT 'The costs of the labor involved in the repair. Negative values should indicate that you got paid to have the repair / maintenance done, though it would be very unusual.',
-    `partsCosts`					FLOAT SIGNED COMMENT 'The costs of the parts involved in the repair. Negative values should indicate that you got paid to have the repair / maintenance done, though it would be very unusual.',
-    `shippingCosts`					FLOAT SIGNED COMMENT 'The costs of the shipping of the parts. Negative values should indicate that you got paid to have the part shipped, though it would be very unusual.',
-    `transportationCosts`			FLOAT SIGNED COMMENT 'The costs of using auxiliary transportation while the vehicle was being maintained. Negative values should indicate that you got paid to use auxiliary transportation, though it would be very unusual.',
-    `taxesCosts`					FLOAT SIGNED COMMENT 'The costs of taxes involved in the repair. Negative values should indicate that you got paid to have the repair or maintenance done, though it would be very unusual.',
-    `totalCosts`					FLOAT SIGNED COMMENT 'The total costs of the repair, including, but not limited to, parts, labor, shipping, transportation, and taxes.',
+	`laborCosts`					DECIMAL(8,2) SIGNED COMMENT 'The costs of the labor involved in the repair. Negative values should indicate that you got paid to have the repair / maintenance done, though it would be very unusual.',
+    `partsCosts`					DECIMAL(8,2) SIGNED COMMENT 'The costs of the parts involved in the repair. Negative values should indicate that you got paid to have the repair / maintenance done, though it would be very unusual.',
+    `shippingCosts`					DECIMAL(8,2) SIGNED COMMENT 'The costs of the shipping of the parts. Negative values should indicate that you got paid to have the part shipped, though it would be very unusual.',
+    `transportationCosts`			DECIMAL(8,2) SIGNED COMMENT 'The costs of using auxiliary transportation while the vehicle was being maintained. Negative values should indicate that you got paid to use auxiliary transportation, though it would be very unusual.',
+    `taxesCosts`					DECIMAL(8,2) SIGNED COMMENT 'The costs of taxes involved in the repair. Negative values should indicate that you got paid to have the repair or maintenance done, though it would be very unusual.',
+    `totalCosts`					DECIMAL(8,2) SIGNED COMMENT 'The total costs of the repair, including, but not limited to, parts, labor, shipping, transportation, and taxes.',
 
     -- Repair Source
     `repairingTechnician`			VARCHAR(64) COMMENT 'The person that repaired the vehicle.',
